@@ -4,14 +4,10 @@ import 'package:paginatorx/data/stub_data.dart';
 import 'package:paginatorx/paging/paging_manager.dart';
 import 'package:paginatorx/paging/paging_manager_impl.dart';
 
-/// Checks if you are awesome. Spoiler: you are.
-class Awesome {
-  bool get isAwesome => true;
-
-
+class PaginatorxBase {
 
   void main() {
-    print("start");
+    print('start');
     var stubData = StubData.generateData();
     PagingManager pagingManager = PagingManagerImpl(data: stubData,);
 
@@ -30,7 +26,7 @@ class Awesome {
 
 
 
-    print("end");
+    print('end');
   }
 
 
