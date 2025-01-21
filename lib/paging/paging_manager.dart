@@ -10,7 +10,7 @@ abstract class PagingManager {
 
   PagingManager({
     /// The data we want to paginate
-    this.data,
+    required this.data,
     /// Default page size for each page
     this.pageSize = 10,
     /// Can be used as an initial page

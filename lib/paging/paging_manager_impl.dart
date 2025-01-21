@@ -24,7 +24,7 @@ class PagingManagerImpl extends PagingManager with SectionedPaginator, AdditionP
 
   PagingManagerImpl({
     /// The data we want to paginate
-    this.data,
+    required this.data,
     /// Default page size for each page
     this.pageSize = 10,
     /// Can be used as an initial page
@@ -35,7 +35,7 @@ class PagingManagerImpl extends PagingManager with SectionedPaginator, AdditionP
 
   @override
   List loadPage({int pageIndex = 0}) {
-    var paginatedList = [];
+    List? paginatedList = [];
     switch(algorithmType) {
       case PagingAlgorithmType.Sections: {
         paginatedList = getSection(data, pageIndex, pageSize);
@@ -47,6 +47,6 @@ class PagingManagerImpl extends PagingManager with SectionedPaginator, AdditionP
       }
     }
     currentPage = pageIndex;
-    return paginatedList;
+    return paginatedList ?? [];
   }
 }
