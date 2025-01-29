@@ -1,6 +1,6 @@
 name: paginatorx
 description: paginatorx is a Flutter package that helps you to paginate data from the network or from any other source.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/unix14/paginatorx
 
 environment:

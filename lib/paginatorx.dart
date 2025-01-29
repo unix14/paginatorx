@@ -3,6 +3,7 @@
 /// More dartdocs go here.
 library paginatorx;
 
-export 'src/paginatorx_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'algorithms/addition_paginator.dart';
+export 'algorithms/sectioned_paginator.dart';
+export 'paging/paging_manager.dart';
+export 'paging/paging_manager_impl.dart';
